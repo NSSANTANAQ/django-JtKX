@@ -73,7 +73,7 @@ def consulta_producto_stock(request):
 
     else:
         form = BusquedaProductoForm()
-        resultados= Productos.objects.all()
+        resultados = Productos.objects.all()
 
     # count = Solicitudes.objects.filter(estado=1).count()
     return render(request, 'consulta_producto_stock.html', {'form': form, 'resultados': resultados})
